@@ -50,6 +50,7 @@ async def apply_required_settings(group_id: int):
     await vk.api_request(
         "groups.setLongPollSettings",
         {"group_id": group_id, "enabled": 1, "api_version": "5.103", "message_new": 1},
+        
     )
 
 
